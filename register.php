@@ -29,6 +29,7 @@ function generateToken() {
 <html>
 <head>
     <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
 <?php
@@ -36,6 +37,14 @@ if(isset($_POST['register'])) {
     register($dbh);
 }
 ?>
+<div class="aboutUl">
+    <ul>
+        <li><a href="home.php">Home</a></li>
+        <li><a href="register.php">Register</a></li>
+        <li><a href="login.php">Login</a></li>
+    </ul>
+</div>
+<div class="login">
 <h2>Reservation</h2>
 <form method="post" action="">
     <input type="text" name="email" placeholder="Email"/>
@@ -45,5 +54,6 @@ if(isset($_POST['register'])) {
     <input type="text" name="address" placeholder="Address"/>
     <input type="submit" name="register" placeholder="Register"/>
 </form>
+</div>
 </body>
 </html>
